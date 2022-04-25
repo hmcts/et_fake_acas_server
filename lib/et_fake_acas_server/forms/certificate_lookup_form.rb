@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'base64'
+require 'active_support'
 require 'active_support/core_ext/string'
 module EtFakeAcasServer
   class CertificateLookupForm

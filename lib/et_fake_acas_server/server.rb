@@ -6,6 +6,7 @@ require 'et_fake_acas_server/xml_builders/found_xml_builder'
 require 'et_fake_acas_server/xml_builders/no_match_xml_builder'
 require 'et_fake_acas_server/xml_builders/internal_error_xml_builder'
 require 'et_fake_acas_server/xml_builders/invalid_certificate_format_xml_builder'
+require 'active_support'
 require 'active_support/core_ext/numeric/time'
 
 
