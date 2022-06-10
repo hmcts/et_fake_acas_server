@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    et_fake_acas_server (0.1.12)
+    et_fake_acas_server (0.2.0)
       activesupport (~> 6.1)
       iodine (~> 0.7)
       nokogiri (~> 1.8, >= 1.8.2)
@@ -12,7 +12,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.5)
+    activesupport (6.1.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -21,17 +21,17 @@ GEM
     concurrent-ruby (1.1.10)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
-    iodine (0.7.45)
+    iodine (0.7.47)
     mini_portile2 (2.8.0)
     minitest (5.15.0)
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    nokogiri (1.13.4)
+    nokogiri (1.13.6)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     racc (1.6.0)
-    rack (2.2.3)
+    rack (2.2.3.1)
     rack-protection (2.2.0)
       rack
     rake (13.0.1)
