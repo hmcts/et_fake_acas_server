@@ -14,6 +14,10 @@ module EtFakeAcasServer
       self.subscription_key = ENV.fetch('ACAS_JSON_SUBSCRIPTION_KEY', 'fakesubscriptionkeyfortesting')
     end
 
+    before do
+      content_type 'application/json'
+    end
+
     configure :development, :production do
       logger = Logger.new(STDOUT)
       logger.level = Logger::DEBUG
