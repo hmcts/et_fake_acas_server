@@ -32,6 +32,8 @@ module EtFakeAcasServer
         case certificate_number
         when /\A(R|NE|MU)000200/ then
           json_builder_for_no_match(certificate_number)
+        when /\A(R|NE|MU)000500/ then
+          json_builder_for_internal_error
         else
           json_builder_for_found(certificate_number)
         end
@@ -54,6 +56,16 @@ module EtFakeAcasServer
       {
         CertificateNumber: certificate_number,
         CertificateDocument: dummy_certificate_as_base_64
+      }
+    end
+
+    def json_builder_for_internal_error
+      {
+        error: {
+          code: 'NoResponse',
+          message: 'The server did not receive a response from an upstream server.'
+        }
+
       }
     end
 
