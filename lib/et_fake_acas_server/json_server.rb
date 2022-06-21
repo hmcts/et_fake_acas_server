@@ -33,9 +33,8 @@ module EtFakeAcasServer
         when /\A(R|NE|MU)000200/ then
           json_builder_for_no_match(certificate_number)
         when /\A(R|NE|MU)000500/ then
-          json_builder_for_internal_error
+          halt 500, JSON.pretty_generate(json_builder_for_internal_error)
         else
-          status 500
           json_builder_for_found(certificate_number)
         end
       end
