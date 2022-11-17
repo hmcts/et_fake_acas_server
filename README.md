@@ -41,7 +41,7 @@ These are as follows (note, the 'R' can also be 'NE' or 'MU')
 
 R000200/18/68 - Returns a 'No Match'
 
-R000201/18/68 - Returns an 'Invalid Certificate Format'
+R000300/18/68 - Returns a delayed (2 mins) valid certificate for error checking
 
 R000500/18/68 - Returns an 'Internal Error'
 
