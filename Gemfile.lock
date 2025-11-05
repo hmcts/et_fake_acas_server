@@ -1,12 +1,12 @@
 PATH
   remote: .
   specs:
-    et_fake_acas_server (2.0.0)
+    et_fake_acas_server (2.0.1)
       activesupport (>= 6.1)
       iodine (~> 0.7)
       nokogiri (~> 1.8, >= 1.8.2)
-      sinatra (~> 3.0)
-      sinatra-contrib (~> 3.0)
+      sinatra (~> 4.0)
+      sinatra-contrib (~> 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -16,34 +16,45 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    base64 (0.3.0)
     concurrent-ruby (1.1.10)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    iodine (0.7.53)
+    iodine (0.7.58)
+    logger (1.7.0)
+    mini_portile2 (2.8.9)
     minitest (5.17.0)
-    multi_json (1.15.0)
-    mustermann (3.0.0)
+    multi_json (1.17.0)
+    mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
-    nokogiri (1.14.0-x86_64-linux)
+    nokogiri (1.14.0)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     racc (1.6.2)
-    rack (2.2.6.2)
-    rack-protection (3.0.5)
-      rack
+    rack (3.2.4)
+    rack-protection (4.2.1)
+      base64 (>= 0.1.0)
+      logger (>= 1.6.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.1.1)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0)
     rake (13.0.6)
     ruby2_keywords (0.0.5)
-    sinatra (3.0.5)
+    sinatra (4.2.1)
+      logger (>= 1.6.0)
       mustermann (~> 3.0)
-      rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.0.5)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.2.1)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    sinatra-contrib (3.0.5)
-      multi_json
+    sinatra-contrib (4.2.1)
+      multi_json (>= 0.0.2)
       mustermann (~> 3.0)
-      rack-protection (= 3.0.5)
-      sinatra (= 3.0.5)
+      rack-protection (= 4.2.1)
+      sinatra (= 4.2.1)
       tilt (~> 2.0)
-    tilt (2.0.11)
+    tilt (2.6.1)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
 
@@ -51,9 +62,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
+  bundler (~> 2.5)
   et_fake_acas_server!
   rake (~> 13.0)
 
 BUNDLED WITH
-   1.17.3
+   2.5.17
