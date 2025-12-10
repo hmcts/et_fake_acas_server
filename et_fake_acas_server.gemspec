@@ -24,9 +24,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.5"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_dependency 'puma', '~> 6.5'
-  spec.add_dependency 'sinatra-contrib', '~> 4.0'
-  spec.add_dependency 'sinatra', '~> 4.0'
+  spec.add_dependency 'sinatra-contrib', '>= 3.0'
+  spec.add_dependency 'sinatra', '>= 3.0'
   spec.add_dependency 'nokogiri', '~> 1.8', '>= 1.8.2'
   spec.add_dependency 'activesupport', '>= 6.1'
   spec.add_dependency 'ostruct'
+  spec.add_dependency 'rack', '~> 2.0'
 end
