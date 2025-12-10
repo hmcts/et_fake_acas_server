@@ -23,9 +23,10 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.5"
   spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_dependency 'iodine', '~> 0.7'
+  spec.add_dependency 'puma', '~> 6.5'
   spec.add_dependency 'sinatra-contrib', '~> 4.0'
   spec.add_dependency 'sinatra', '~> 4.0'
   spec.add_dependency 'nokogiri', '~> 1.8', '>= 1.8.2'
   spec.add_dependency 'activesupport', '>= 6.1'
+  spec.add_dependency 'ostruct'
 end
