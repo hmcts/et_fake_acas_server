@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'nokogiri', '~> 1.8', '>= 1.8.2'
   spec.add_dependency 'activesupport', '>= 6.1'
   spec.add_dependency 'ostruct'
-  spec.add_dependency 'rack', '~> 2.0'
+  spec.add_dependency 'rack', '~> 3.0'
 end
