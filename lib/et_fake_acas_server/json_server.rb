@@ -58,7 +58,9 @@ module EtFakeAcasServer
     def json_builder_for_found(certificate_number)
       {
         CertificateNumber: certificate_number,
-        CertificateDocument: dummy_certificate_as_base_64
+        CertificateDocument: dummy_certificate_as_base_64,
+        DateOfNotification: "2025-09-29",
+        DateCertificateIssued: "2026-01-08"
       }
     end
 
