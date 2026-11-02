@@ -22,6 +22,7 @@ module EtFakeAcasServer
       logger = Logger.new(STDOUT)
       logger.level = Logger::DEBUG
       set :logger, logger
+      set :host_authorization, { permitted_hosts: [] }
     end
 
     post '/ECCLJson' do
